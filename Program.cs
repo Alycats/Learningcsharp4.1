@@ -19,9 +19,9 @@ class Program
                     heightInCM[i] = Convert.ToInt32(Console.ReadLine());
                     validInput = true;
                 }
-                catch ("Invalid input, try again")
+                catch (Exception e)
                 {
-                    Console.WriteLine(e);
+                    Console.WriteLine("Invalid input, try again");
                 }
             }
         }
