@@ -3,6 +3,35 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+
+        int[] heightInCM = new int[5];
+        double[] heightInInches = new double[5];
+
+
+        for (int i = 0; i < 5; i++)
+        {
+            Console.WriteLine("Enter a Height in CM");
+            heightInCM[i] = Convert.ToInt32(Console.ReadLine());
+        }
+
+        for (int i=0; i < 5; i++)
+        {
+            heightInInches[i] = heightInCM[i] / 2.54;
+        }
+            Console.Write("Heights: ");
+        
+            for (int i = 0; i < 5; i++)
+            {
+                Console.Write($" {heightInCM[i]} CM = {heightInInches[i] : 0.##} inches, ");
+
+            }
+
+
+
+            Console.WriteLine("Hello, World!");
+            Console.ReadKey(true);
+
+
+
+        }
     }
-}
